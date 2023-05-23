@@ -227,7 +227,6 @@ async function compileOnUnix(
   if (cpu === 'arm' && configureOptions.withArmFpu) {
     args.push('--with-arm-fpu', configureOptions.withArmFpu);
     args.push('--with-arm-float-abi', 'hard')
-    args.push('--shared-ssl')
   }
 
   if (configureOptions.useNinja) {
